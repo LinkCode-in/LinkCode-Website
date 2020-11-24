@@ -1,0 +1,133 @@
+html {
+  scroll-behavior: smooth;
+}
+@charset "utf-8";
+@import url{'https://fonts.googleapis.com/css?family=Ubuntu:400,700'}
+
+*{margin: 0; padding: 0; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+body{background: #fff;margin:0;padding:0}
+
+
+#header{width: 100%; height: 120px; background: #fff ; position: fixed; top: 0; text-align:center; line-height: 100px }
+#myNavbar{width:100%; height: 120px; box-sizing: border-box; text-align:center; justify-content:center; display:flex; flex-wrap: wrap; box-shadow: 0px 15px 10px -15px #DCDBDF;  }
+#myNavbar h2{font-weight: bold; font-size: 40px; padding-right:3%; float: left; box-sizing:border-box; padding-left: 3% ; text-decoration: none; color: #5931EC; line-height: 85px  }
+#barIcon{ box-sizing:border-box; text-align:right; justify-content:right; margin-left: 1%; color: #1D0E56; font-size: 30px}
+#barIcon a{margin-top: 42px}
+#navBarOptions h4{font-weight: normal;margin-left:3%; float:left; box-sizing:border-box;}
+#navBarOptions h4 a{text-decoration: none; color: #000; line-height: 90px }
+#navBarOptions h4:hover{border-bottom: 3px solid #5931EC; }
+#mySidebar{top: 120px; width: 30%; color: white; background-color: #1D0E56}
+#mySidebar a{padding: 10%}
+
+
+#main{display: flex; flex-direction: row; padding-bottom:11%}
+#info{width:53%; padding-top:15%; padding-left: 15%; padding-right: 5%; float: left}
+#info h1{ font-weight:bold }
+#image img{width: 100%; height: 80%; margin-top: 40%; padding-right: 10%}
+#tagline h1{box-sizing: border-box; font-weight: bold; margin-left: 10%; margin-right: 10%; margin-top: 1%; border-radius: 10px;  box-shadow: 7px 5px 5px -3px rgba(92,92,92,0.4), 0px 5px 10px rgba(92,92,92,0.6), -7px 5px 5px -3px rgba(92,92,92,0.4) }
+
+
+#itServices{width: 80%; text-align: left; margin-left:auto; margin-right:auto;padding-top: 8%;}
+#itServices h1{padding-left: 6%}
+#services{text-align: center; margin-left:auto;}
+#row {padding-left: 8%; }
+#column{float: left; width: 33%; padding: 8px; } 
+#row:after{content: ""; display: table; 	clear: both; }
+#content{background-color: white; padding: 10px; border: 3px solid #DCDBDF;  box-shadow: 0px 15px 10px -15px #DCDBDF; border-radius: 20px  }
+#content img{width: 100%; height: 25%; border-radius: 20px }
+
+
+#careerSupport{width: 80%; text-align: left; margin-left:auto; margin-right:auto;padding-top: 8%;}
+#careerSupport h1{padding-left: 6%}
+#career{text-align: center; margin-left:auto;}
+#row {padding-left: 8%; }
+#column{float: left; width: 33%; padding: 8px; } 
+#row:after{content: ""; display: table; 	clear: both; }
+#content{background-color: white; padding: 10px; border: 3px solid #DCDBDF;  box-shadow: 0px 15px 10px -15px #DCDBDF; border-radius: 20px  }
+#content img{width: 100%; height: 25%; border-radius: 20px }
+
+
+#contactus{text-align: left; padding-top: 5%; padding-left: 13%; margin-bottom: 5%;display: flex; flex-direction: row;}
+#contactInfo{width: 100%; }
+#contactImg img{width:60%; height:100%; padding-left: 15%}
+#contact{padding-left: 4%}
+
+
+#footer{width: 100%; height: 20%; bottom:10px; background-color: #1D0E56; position: relative}
+#socials{text-align: center;size: 50px; padding-top: 2%}
+#socials h5{font-weight: normal; color: #fff}
+#socials a{color: #fff; font-size: 2.5em; padding: 10px; transition: all 0.5s linear; }
+#socials a:hover{color: #AEA2DC; }
+
+
+
+@media screen and (max-width: 1448px) {
+	#image img{width: 100%; height: 70%; margin-top: 35%; padding-right: 10%}
+	#tagline h1{margin-top: -2%}	
+	#itServices{padding-top: 9%;}
+    #careerSupport{padding-top: 9%;}
+    #contactus{padding-top: 9%;}
+}
+
+@media screen and (max-width: 1184px) {
+	#image img{width: 100%; height: 60%; margin-top:35%; padding-right: 10%}
+	#tagline h1{margin-top: -5%}
+	#itServices{padding-top: 12%;}
+    #careerSupport{padding-top: 12%;}
+    #contactus{padding-top: 12%;}
+}
+
+@media screen and (max-width: 1008px) {
+	#myNavbar{text-align:left; justify-content: left; padding-left: 5%}
+}
+
+@media screen and (max-width: 900px) {
+    #main{flex-direction: row; padding-top: 5%; padding-bottom:5%}
+    #info{width:100%}
+    #image img{width: 100%; height: 70%}
+    #tagline h1{margin-top: 2%}
+    #itServices{padding-top: 14%;}
+    #careerSupport{padding-top: 14%;}
+    #contactus{padding-top: 14%;}
+    #column{width: 50%; }
+    #contactus{flex-direction: column; width: 100%; padding-bottom: 5%; padding-right: 6%}
+    #contactInfo{width: 100%; }
+    #contactImg img{width:0%;}  
+}
+
+@media screen and (max-width: 854px) {
+	#title h4{display:none!important}
+	#title{text-align:left; justify-content:left; padding-left: 10%}
+	#itServices{padding-top: 16%;}
+	#careerSupport{padding-top: 16%;}
+	#contactus{padding-top: 16%;}
+}
+
+@media screen and (max-width: 739px) {
+    #main{flex-direction: column; padding-top: 13%; padding-bottom:10%}
+    #info{width:100%}
+    #image img{width: 0%;}
+    #tagline h1{margin-top: -40%; margin-bottom: 20%}
+    #mySidebar{ width: 40%; }
+    #itServices{padding-top: 20%;}
+    #careerSupport{padding-top: 20%;}
+    #contactus{padding-top: 20%;}
+    #column{width: 100%; }
+    #itServices{margin-top: -20%}
+    #contactus{flex-direction: column; width: 100%; padding-bottom: 5%; padding-right: 6%}
+    #contactInfo{width: 100%; }
+    #contactImg img{width:0%;}
+}
+
+@media screen and (max-width: 588px) {
+  #itServices{padding-top: 22%;}
+  #careerSupport{padding-top: 22%;}
+  #contactus{padding-top: 22%;}
+}
+
+@media screen and (max-width: 518px) {
+  #itServices{padding-top: 24%;}
+  #careerSupport{padding-top: 24%;}
+  #contactus{padding-top: 24%;}
+}
+
